@@ -15,7 +15,7 @@ function App() {
       setItems(updatedItems);
       setEditIndex(null);
     } else {
-      // Si ya existe, aumentamos la cantidad
+
       const existingIndex = items.findIndex((it) => it.nombre.toLowerCase() === item.toLowerCase());
       if (existingIndex !== -1) {
         const updatedItems = [...items];
